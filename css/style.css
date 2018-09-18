@@ -1,6 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body, div {
-    margin: 0px;
     font-family: 'Montserrat', sans-serif;
     background-color: #ebebeb;
-    color: #ffffff;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+
+.navbar {
+    background-color: red;
+    height: 150px;
+}
+
+nav {
+    background-color: red;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.logo {
+    float: left;
+    padding: 1em;
+}
+
+.menu-links a {
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+.jumbotron {
+    background-color: red;
+    height: 100%;
 }
