@@ -22,4 +22,4 @@ I built this webpage with [Lily](https://github.com/LilyDa08) during my internsh
 ## Authors
 
 * **Matthieu Brouillard** - [brrrouillard](https://twitter.com/brrrouillard)
-**Lily Danhaive** - [LilyDa08](https://github.com/LilyDa08)
+* **Lily Danhaive** - [LilyDa08](https://github.com/LilyDa08)
