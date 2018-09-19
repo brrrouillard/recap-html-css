@@ -26,6 +26,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .menu-links {
@@ -94,7 +95,7 @@ body {
 }
 
 .footer a:hover {
-    color: blue;
+    color: #4267b2;
 }
 
 .page-menu {  
@@ -159,12 +160,16 @@ body {
     color: black;
     background-color: white;
     font-size: 150%;
-    grid-gap: 0.5em;
+    margin-bottom: 1em;
 }
 
 .gallery {
     width: 100%;
-    
+    opacity: 0.85;
+}
+
+.gallery:hover {
+    opacity: 1;
 }
 
 .first-gallery {
@@ -173,6 +178,8 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+
 
 .second-gallery {
     background-image: url(../assets/gallery2.jpg);
@@ -192,9 +199,62 @@ body {
     background-size: cover;
     background-position: center;
 }
-.fith-gallery {
+.fifth-gallery {
     background-image: url(../assets/gallery5.jpg);
     grid-column: 5 / span 1;
     background-size: cover;
     background-position: center;
+}
+
+/* 
+* MAPS AND LOCATION
+*/
+
+.page-location {  
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: repeat(3, 1fr);
+    height: 65vh;
+    color: black;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.map-img {
+    grid-area: 1/2/1/3;   
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* 
+* CONTACT
+*/
+
+.page-contact {  
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: repeat(3, 1fr);
+    height: 65vh;
+    color: black;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+textarea {
+    height: 10em;
+    width: 30em;
+}
+
+form {
+    grid-area: 1/2/1/3;   
+    line-height: 150%;
+}
+
+fieldset {
+    width: 100%;
+    padding: 1em;
 }
