@@ -5,7 +5,7 @@
 Any web browser.
 
 ### Installing and Running
-Launch index.html.
+Launch [index.html](https://brrrouillard.github.io/recap-html-css/).
 
 ## Purpose
 I built this webpage with [Lily](https://github.com/LilyDa08) during my internship at BeCode. The goal was to create (or improve) a website for a company from Brussels.
