@@ -164,6 +164,7 @@ body {
 
 .gallery {
     width: 100%;
+    
 }
 
 .first-gallery {
@@ -176,6 +177,24 @@ body {
 .second-gallery {
     background-image: url(../assets/gallery2.jpg);
     grid-column: 2 / span 1;
+    background-size: cover;
+    background-position: center;
+}
+.third-gallery {
+    background-image: url(../assets/gallery3.jpg);
+    grid-column: 3 / span 1;
+    background-size: cover;
+    background-position: center;
+}
+.fourth-gallery {
+    background-image: url(../assets/gallery4.jpg);
+    grid-column: 4 / span 1;
+    background-size: cover;
+    background-position: center;
+}
+.fith-gallery {
+    background-image: url(../assets/gallery5.jpg);
+    grid-column: 5 / span 1;
     background-size: cover;
     background-position: center;
 }
