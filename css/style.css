@@ -4,14 +4,27 @@
     box-sizing: border-box;
 }
 
-html, body, div {
-    font-family: 'Montserrat', sans-serif;
+html,
+body,
+div {
+    font-family: 'Yantramanav', 'Montserrat', sans-serif;
     height: 100%;
 }
 
 body {
     letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
+
+.page {
+    padding-top: 7%;
+}
+
+/*
+* FIRST PAGE
+*/
 
 .container {
     height: 100%;
@@ -20,9 +33,8 @@ body {
     background-position: center;
 }
 
-
 .navbar {
-    height: 10vh;
+    height: 9vh;
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
@@ -35,7 +47,11 @@ body {
     float: right;
     margin-top: 1.5em;
 }
-
+.logo h1 {
+    font-weight: 200;
+    border: 1px solid white;
+    padding: 2px 10px;
+}
 
 .logo {
     float: left;
@@ -43,18 +59,19 @@ body {
     color: white;
 }
 
-.menu-links a, .menu-link a:visited {
+.menu-links a,
+.menu-link a:visited {
     text-decoration: none;
     padding-right: 1em;
-    color: white; 
+    color: white;
 }
 
 .menu-links a:hover {
-    text-shadow: 2px 2px #5d627a;
-    font-weight: 500;
+    text-shadow: 3px 3px 2px rgba(2, 2, 2, 0.66);
+    font-weight: 300;
 }
 
-.content {  
+.content {
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     height: 100vh;
@@ -65,6 +82,8 @@ body {
 
 .content h1 {
     grid-row: 4 / span 1;
+    font-weight: 300;
+    font-size: 4em;
 }
 
 .content h2 {
@@ -72,44 +91,34 @@ body {
     grid-row: 5 / span 2;
 }
 
-.footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 10vh;
-    color: rgb(238, 237, 237);
-    text-align: center;
-    padding-top: 1em;
-    letter-spacing: 0.5px;
-}
+/*
+* CARTE
+*/
 
-.footer ul {
-    display: flex;
-    list-style: none;
-    font-size: 150%;
-    justify-content: center;
-}
-
-.footer a, .footer a:visited {
-    text-decoration: none;
-    padding-right: 1em;
-    color: rgb(238, 237, 237); 
-}
-
-.footer a:hover {
-    color: #4267b2;
-}
-
-.page-menu {  
+.page-menu {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
+    height: 90vh;
     color: black;
-    background-color: white;
     font-size: 150%;
-    grid-gap: 0.7em;
-    margin: 0.7em;
+    grid-gap: 1em;
+    margin: 1em;
+}
+.box h3 {
+    font-weight: 300;
+    margin: 20px;
+    font-size: 1.5em;
 }
 
+.box td {
+    font-weight: 100;
+    font-size: 0.8em;
+}
+table{
+    width: 100%;
+    margin: auto;
+}
 .menu-bieres {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -119,7 +128,6 @@ body {
 .menu-softs {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-
 }
 
 .menu-alcools {
@@ -135,28 +143,31 @@ body {
 .box {
     text-align: center;
     padding: 0.5em;
-    background-color: #e1e2e2;
+    background-color: rgba(234, 234, 234, 1);
     justify-content: center;
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grille-menu {
     margin: auto;
 }
+
 .grille-menu td {
 
-    text-align: left;  
+    text-align: left;
     padding: 0.1em;
-    padding-right: 1em;
 }
 
 /*
 * GALLERY PAGE
 */
 
-.page-photo {  
+.page-photo {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    height: 50vh;
+    height: 60vh;
     color: black;
     background-color: white;
     font-size: 150%;
@@ -179,26 +190,27 @@ body {
     background-position: center;
 }
 
-
-
 .second-gallery {
     background-image: url(../assets/gallery2.jpg);
     grid-column: 2 / span 1;
     background-size: cover;
     background-position: center;
 }
+
 .third-gallery {
     background-image: url(../assets/gallery3.jpg);
     grid-column: 3 / span 1;
     background-size: cover;
     background-position: center;
 }
+
 .fourth-gallery {
     background-image: url(../assets/gallery4.jpg);
     grid-column: 4 / span 1;
     background-size: cover;
     background-position: center;
 }
+
 .fifth-gallery {
     background-image: url(../assets/gallery5.jpg);
     grid-column: 5 / span 1;
@@ -210,20 +222,24 @@ body {
 * MAPS AND LOCATION
 */
 
-.page-location {  
+.page-location {
     display: grid;
-    grid-template-rows: 70% 30%;
     grid-template-columns: repeat(3, 1fr);
     height: 65vh;
     color: black;
-    background-color: white;
-    margin-bottom: 1em;
+    background-color: #f7f7f7;
 }
 
 .map-img {
-    grid-area: 1/2/1/3;   
+    grid-area: 1/2/1/3;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 21em;
+    
 }
-
+.map-img iframe{
+    height: 100%;
+}
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -234,14 +250,13 @@ body {
 * CONTACT
 */
 
-.page-contact {  
+.page-contact {
     display: grid;
     grid-template-rows: 70% 30%;
     grid-template-columns: repeat(3, 1fr);
-    height: 65vh;
+    height: 90vh;
     color: black;
     background-color: white;
-    margin-bottom: 1em;
 }
 
 textarea {
@@ -250,7 +265,7 @@ textarea {
 }
 
 form {
-    grid-area: 1/2/1/3;   
+    grid-area: 1/2/1/3;
     line-height: 150%;
 }
 
@@ -258,3 +273,36 @@ fieldset {
     width: 100%;
     padding: 1em;
 }
+
+
+/*
+* FOOTER
+*/
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 10vh;
+    color: rgb(238, 237, 237);
+    text-align: center;
+    padding-top: 1em;
+    letter-spacing: 0.5px;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    font-size: 150%;
+    justify-content: center;
+}
+
+.footer a,
+.footer a:visited {
+    text-decoration: none;
+    padding-right: 1em;
+    color: rgb(238, 237, 237);
+}
+
+.footer a:hover {
+    color: #4267b2;
+}
+
