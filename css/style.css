@@ -35,7 +35,7 @@ body {
 
 .navbar {
     height: 8vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -50,15 +50,15 @@ body {
 
 .logo {
     float: left;
-    padding:0.1em;
+    padding-left: 1em;
     color: white;
     line-height: 8vh;
-    
+    font-family: 'Amatic SC';
+    font-size: 5vh;
 }
 
 .logo h1 {
-    font-weight: 200;
-    
+    font-weight: bold;
 }
 
 .menu-links a,
@@ -122,7 +122,7 @@ body {
     margin: 0.6em;
     font-size: 1.1em;
     border-bottom: 1px solid #ffffff;
-    color: #bfbfbf:
+    color: #bfbfbf;
 }
 
 .box td {
@@ -333,6 +333,13 @@ fieldset {
     justify-content: center;
     margin-left: 45%;
     margin-top: 1%;
+    transition-duration: 0.3s;
+}
+
+#submit-button:hover {
+    transform: scale(1.15);
+    transition-duration: 0.2s;
+
 }
 
 /*
@@ -344,7 +351,7 @@ fieldset {
     height: 10%;
     color: rgb(238, 237, 237);
     text-align: center;
-    padding-top: 0.8em;
+    padding-top: 0.3em;
     letter-spacing: 0.5px;
 }
 
@@ -352,8 +359,11 @@ fieldset {
     display: flex;
     list-style: none;
     font-size: 150%;
-    justify-content: center;
-    
+    justify-content: center;  
+}
+
+.footer p {
+    font-size: 80%;
 }
 
 .footer a,
@@ -363,6 +373,10 @@ fieldset {
     color: rgb(238, 237, 237);
 }
 
-.footer a:hover {
+.fa-facebook:hover {
     color: #4267b2;
+}
+
+.fa-instagram:hover {
+    color: #fbad50;
 }
