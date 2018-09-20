@@ -38,19 +38,20 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .menu-links {
     display: flex;
     list-style: none;
     float: right;
-    margin-top: 1.4em;
+    margin-top: 1em;
 }
 
 .logo {
     float: left;
-    padding: 1% 3%;
+    padding-left: 1em;
+    padding-top: 0.25em;
     color: white;
 }
 
@@ -187,10 +188,14 @@ table {
 .gallery {
     width: 100%;
     opacity: 0.85;
+    transition-duration: 0.5s;
 }
 
 .gallery:hover {
     opacity: 1;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    z-index: 2;
 }
 
 .first-gallery {
@@ -273,17 +278,19 @@ table {
     background-color: white;
 }
 
+
+
 .contact-img {
     grid-column: 1 / span 1;
     background-image: url(../assets/contact-us.png);
-    background-position: top left;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: 75%;
-    
+
 }
 
 textarea {
-    height: 10em;
+    height: 7em;
     width: 30em;
     color: #d0d0d0;
     padding: 10px;
@@ -292,7 +299,7 @@ textarea {
     font-weight: 100;
 }
 
-legend{
+legend {
     font-size: 1.3em;
     border: 2px solid rgba(87, 87, 87, 0.51);
     padding: 1px 7px;
@@ -301,13 +308,22 @@ legend{
 
 form {
     grid-area: 1/2/1/3;
-    line-height: 150%;
+    line-height: 125%;
     grid-column: 2 / span 1;
 }
 
 fieldset {
     width: 100%;
-    padding: 1em;
+    padding: 1em 2em;
+}
+
+#choice-list {
+    margin-bottom: 1em;
+}
+
+#newsletter-button {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
 }
 
 #submit-button {
