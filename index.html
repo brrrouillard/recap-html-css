@@ -6,25 +6,24 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <title>Le Flip</title>
 </head>
 
 <body>
     <div class="container">
-        <nav>
-            <div class="navbar">
-                <div class="logo">
-                    <h1>Flip</h1>
-                </div>
-                <div>
-                    <ul class="menu-links">
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#gallery">Photos</a></li>
-                        <li><a href="#location">Où nous trouver</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Flip</h1>
+            </div>
+            <div>
+                <ul class="menu-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Photos</a></li>
+                    <li><a href="#location">Où nous trouver</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -157,14 +156,15 @@
                 <div class="gallery fifth-gallery"></div>
             </div>
             <div class="page page-location" id="location">
-                <div class="map-img"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.3331568107947!2d4.373704872229281!3d50.82640830046883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c494b6419a65%3A0xcea515c54087b932!2sFLIP!5e0!3m2!1sfr!2sbe!4v1537359954123" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="center"></iframe></div>
+                <div class="map-img"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.3331568107947!2d4.373704872229281!3d50.82640830046883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c494b6419a65%3A0xcea515c54087b932!2sFLIP!5e0!3m2!1sfr!2sbe!4v1537359954123"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="center"></iframe></div>
             </div>
             <div class="page page-contact" id="contact">
-                <form>
+                <div class="contact-img"></div>
                     <form class="center">
                         <fieldset class="center">
                             <legend>Contact</legend>
-                            <input type="radio" name="gender" value="male">Male<br>
+                            <input type="radio" name="gender" value="male"> Male<br>
                             <input type="radio" name="gender" value="female"> Female<br>
                             <input type="radio" name="gender" value="other"> Other<br> Nom :
                             <input type="text" name="name"><br> E-Mail :
@@ -175,9 +175,9 @@
                                 <option value="beer-idea">Proposition de bière</option>
                                 <option value="other">Autre</option>
                             </select><br> Message :<br>
-                            <textarea>Write your comment here</textarea><br>
+                            <textarea placeholder="Write your comment here"></textarea><br>
                             <input type="checkbox"> S'abonner à notre newsletter <br>
-                            <input type="submit" value="Envoyer">
+                            <input type="submit" value="Envoyer" id="submit-button">
                         </fieldset>
                     </form>
             </div>
@@ -192,6 +192,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
