@@ -34,29 +34,31 @@ body {
 }
 
 .navbar {
-    height: 9vh;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .menu-links {
     display: flex;
     list-style: none;
     float: right;
-    margin-top: 1.5em;
-}
-.logo h1 {
-    font-weight: 200;
-    border: 1px solid white;
-    padding: 2px 10px;
+    line-height: 8vh;
 }
 
 .logo {
     float: left;
-    padding: 1em;
+    padding-left: 1em;
     color: white;
+    line-height: 8vh;
+    font-family: 'Amatic SC';
+    font-size: 5vh;
+}
+
+.logo h1 {
+    font-weight: bold;
 }
 
 .menu-links a,
@@ -99,26 +101,45 @@ body {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    height: 90vh;
+    height: 100%;
     color: black;
     font-size: 150%;
-    grid-gap: 1em;
+    grid-gap: 0.6em;
     margin: 1em;
 }
+
+.box {
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(248, 248, 248);
+    justify-content: center;
+    border-radius: 0.2em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .box h3 {
     font-weight: 300;
-    margin: 20px;
-    font-size: 1.5em;
+    margin: 0.6em;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ffffff;
+    color: #bfbfbf;
 }
 
 .box td {
     font-weight: 100;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
-table{
+
+td.price {
+    text-align: right;
+    width: 6%;
+}
+
+table {
     width: 100%;
     margin: auto;
 }
+
 .menu-bieres {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -138,16 +159,6 @@ table{
 .menu-snacks {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-}
-
-.box {
-    text-align: center;
-    padding: 0.5em;
-    background-color: rgba(234, 234, 234, 1);
-    justify-content: center;
-    
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grille-menu {
@@ -177,10 +188,14 @@ table{
 .gallery {
     width: 100%;
     opacity: 0.85;
+    transition-duration: 0.5s;
 }
 
 .gallery:hover {
     opacity: 1;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    z-index: 2;
 }
 
 .first-gallery {
@@ -225,21 +240,25 @@ table{
 .page-location {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 65vh;
+    height: 75vh;
     color: black;
     background-color: #f7f7f7;
+
 }
 
 .map-img {
     grid-area: 1/2/1/3;
-    padding: 15px;
+    padding: 1em;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    height: 21em;
+    background-color: white;
+    height: 85%;
     
 }
-.map-img iframe{
+
+.map-img iframe {
     height: 100%;
 }
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -259,21 +278,69 @@ table{
     background-color: white;
 }
 
+
+
+.contact-img {
+    grid-column: 1 / span 1;
+    background-image: url(../assets/contact-us.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 75%;
+
+}
+
 textarea {
-    height: 10em;
+    height: 7em;
     width: 30em;
+    color: #d0d0d0;
+    padding: 10px;
+    font-family: 'yantramanav';
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+legend {
+    font-size: 1.3em;
+    border: 2px solid rgba(87, 87, 87, 0.51);
+    padding: 1px 7px;
+    border-radius: 0.5em;
 }
 
 form {
     grid-area: 1/2/1/3;
-    line-height: 150%;
+    line-height: 125%;
+    grid-column: 2 / span 1;
 }
 
 fieldset {
     width: 100%;
-    padding: 1em;
+    padding: 1em 2em;
 }
 
+#choice-list {
+    margin-bottom: 1em;
+}
+
+#newsletter-button {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+#submit-button {
+    font-size: 0.8em;
+    padding: 0.3em;
+    text-align: center;
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: 1%;
+    transition-duration: 0.3s;
+}
+
+#submit-button:hover {
+    transform: scale(1.15);
+    transition-duration: 0.2s;
+
+}
 
 /*
 * FOOTER
@@ -281,10 +348,10 @@ fieldset {
 
 .footer {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 10vh;
+    height: 10%;
     color: rgb(238, 237, 237);
     text-align: center;
-    padding-top: 1em;
+    padding-top: 0.3em;
     letter-spacing: 0.5px;
 }
 
@@ -292,7 +359,11 @@ fieldset {
     display: flex;
     list-style: none;
     font-size: 150%;
-    justify-content: center;
+    justify-content: center;  
+}
+
+.footer p {
+    font-size: 80%;
 }
 
 .footer a,
@@ -302,7 +373,10 @@ fieldset {
     color: rgb(238, 237, 237);
 }
 
-.footer a:hover {
+.fa-facebook:hover {
     color: #4267b2;
 }
 
+.fa-instagram:hover {
+    color: #fbad50;
+}
