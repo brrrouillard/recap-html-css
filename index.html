@@ -12,19 +12,17 @@
 
 <body>
     <div class="container">
-        <nav>
-            <div class="navbar">
-                <div class="logo">
-                    <h1>Flip</h1>
-                </div>
-                <div>
-                    <ul class="menu-links">
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#gallery">Photos</a></li>
-                        <li><a href="#location">Où nous trouver</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Flip</h1>
+            </div>
+            <div>
+                <ul class="menu-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Photos</a></li>
+                    <li><a href="#location">Où nous trouver</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -160,26 +158,28 @@
                 <div class="map-img"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.3331568107947!2d4.373704872229281!3d50.82640830046883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c494b6419a65%3A0xcea515c54087b932!2sFLIP!5e0!3m2!1sfr!2sbe!4v1537359954123" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="center"></iframe></div>
             </div>
             <div class="page page-contact" id="contact">
-                <form>
-                    <form class="center">
-                        <fieldset class="center">
-                            <legend>Contact</legend>
-                            <input type="radio" name="gender" value="male">Male<br>
-                            <input type="radio" name="gender" value="female"> Female<br>
-                            <input type="radio" name="gender" value="other"> Other<br> Nom :
-                            <input type="text" name="name"><br> E-Mail :
-                            <input type="email" name="name"><br> Raison : <br>
-                            <select>
+                <form class="center">
+                    <fieldset class="center">
+                        <legend>Contact</legend>
+                        <label for="name">Male </label>
+                        <input type="radio" name="gender" value="male"><br>
+                        <label for="name">Female </label>
+                        <input type="radio" name="gender" value="female"><br>
+                        <label for="name">Other </label>
+                        <input type="radio" name="gender" value="other"><br><label for="name">Nom : </label>
+                        <input type="text" name="name"><br><label for="name">Prénom : </label>
+                        <input type="email" name="name"><br> <label for="name">Motif : </label><br>
+                        <select>
                                 <option value="default" selected>-</option>
                                 <option value="lost-item">Objets perdus</option>
                                 <option value="beer-idea">Proposition de bière</option>
                                 <option value="other">Autre</option>
-                            </select><br> Message :<br>
-                            <textarea>Write your comment here</textarea><br>
-                            <input type="checkbox"> S'abonner à notre newsletter <br>
-                            <input type="submit" value="Envoyer">
-                        </fieldset>
-                    </form>
+                            </select><br><label for="name">Message </label><br>
+                        <textarea>Write your comment here</textarea><br>
+                        <input type="checkbox"> S'abonner à notre newsletter <br>
+                        <input type="submit" value="Envoyer">
+                    </fieldset>
+                </form>
             </div>
         </main>
         <footer>
