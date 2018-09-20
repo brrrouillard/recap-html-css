@@ -35,7 +35,7 @@ body {
 
 .navbar {
     height: 9%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -45,7 +45,7 @@ body {
     display: flex;
     list-style: none;
     float: right;
-    margin-top: 1em;
+    margin-top: 1.4em;
 }
 
 .logo {
@@ -121,6 +121,7 @@ body {
     margin: 0.6em;
     font-size: 1.1em;
     border-bottom: 1px solid #ffffff;
+    color: #bfbfbf:
 }
 
 .box td {
