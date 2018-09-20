@@ -34,7 +34,7 @@ body {
 }
 
 .navbar {
-    height: 9%;
+    height: 8vh;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
@@ -45,20 +45,20 @@ body {
     display: flex;
     list-style: none;
     float: right;
-    margin-top: 1em;
+    line-height: 8vh;
 }
 
 .logo {
     float: left;
-    padding-left: 1em;
-    padding-top: 0.25em;
+    padding:0.1em;
     color: white;
+    line-height: 8vh;
+    
 }
 
 .logo h1 {
     font-weight: 200;
-    border: 1px solid white;
-    padding: 0.1em 0.2em;
+    
 }
 
 .menu-links a,
