@@ -301,8 +301,9 @@ textarea {
 legend {
     font-size: 1.3em;
     border: 2px solid rgba(87, 87, 87, 0.51);
-    padding: 1px 7px;
+    padding: 0.2em;
     border-radius: 0.5em;
+    box-shadow: 2px 2px 4px #dbdbdb;
 }
 
 form {
@@ -326,20 +327,30 @@ fieldset {
 }
 
 #submit-button {
-    font-size: 0.8em;
-    padding: 0.3em;
     text-align: center;
-    justify-content: center;
-    margin-left: 45%;
-    margin-top: 1%;
+    margin-left: 35%;
     transition-duration: 0.3s;
+    background-color: #548ac1;
+    border: 1px solid #376089;
+    border-radius: 0.5em;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    height: 2em;
+    width: 8em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    transform: scale(0.95);
 }
 
 #submit-button:hover {
-    transform: scale(1.15);
+/*    transform: scale(1);*/
+    letter-spacing: 3px;
     transition-duration: 0.2s;
-
+    background-color: #368ce3; 
+    box-shadow: 2px 2px 4px #cbcbcb;
 }
+
 
 /*
 * FOOTER
