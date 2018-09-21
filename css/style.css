@@ -26,6 +26,11 @@ body {
 * FIRST PAGE
 */
 
+a {
+    text-decoration: none;
+    color: white
+}
+
 .container {
     height: 100%;
     background-image: url(../assets/jumbotron.jpg);
@@ -65,7 +70,6 @@ body {
 .menu-link a:visited {
     text-decoration: none;
     padding-right: 1em;
-    color: white;
 }
 
 .menu-links a:hover {
@@ -243,7 +247,6 @@ table {
     height: 75vh;
     color: black;
     background-color: #f7f7f7;
-
 }
 
 .map-img {
@@ -251,8 +254,7 @@ table {
     padding: 1em;
     border: 2px solid rgba(0, 0, 0, 0.1);
     background-color: white;
-    height: 85%;
-    
+    height: 85%; 
 }
 
 .map-img iframe {
@@ -278,15 +280,12 @@ table {
     background-color: white;
 }
 
-
-
 .contact-img {
     grid-column: 1 / span 1;
     background-image: url(../assets/contact-us.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 75%;
-
 }
 
 textarea {
