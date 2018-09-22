@@ -14,7 +14,7 @@ div {
 body {
     letter-spacing: 1px;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 100%;
     letter-spacing: 1px;
 }
 
@@ -51,6 +51,7 @@ a {
     list-style: none;
     float: right;
     line-height: 8vh;
+    font-size: 1.2em
 }
 
 .logo {
@@ -59,7 +60,7 @@ a {
     color: white;
     line-height: 8vh;
     font-family: 'Amatic SC';
-    font-size: 5vh;
+    font-size: 5.5vh;
 }
 
 .logo h1 {
@@ -107,8 +108,8 @@ a {
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     color: black;
-    font-size: 150%;
-    grid-gap: 0.6em;
+    font-size: 1.6em;
+    grid-gap: 2vh 0.2vw;
     margin: 1em;
 }
 
@@ -118,12 +119,14 @@ a {
     background-color: rgb(248, 248, 248);
     justify-content: center;
     border-radius: 0.2em;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    
+    box-shadow: 0.3vh 0.4vh 0.3vh rgba(0, 0, 0, 0.1);
 }
 
 .box h3 {
     font-weight: 300;
-    margin: 0.6em;
+    margin: 0.6vh;
     font-size: 1.1em;
     border-bottom: 1px solid #ffffff;
     color: #bfbfbf;
@@ -139,15 +142,9 @@ td.price {
     width: 6%;
 }
 
-table {
-    width: 100%;
-    margin: auto;
-}
-
 .menu-bieres {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-
 }
 
 .menu-softs {
@@ -170,7 +167,6 @@ table {
 }
 
 .grille-menu td {
-
     text-align: left;
     padding: 0.1em;
 }
@@ -191,50 +187,68 @@ table {
 
 .gallery {
     width: 100%;
-    opacity: 0.85;
     transition-duration: 0.5s;
 }
 
 .gallery:hover {
-    opacity: 1;
     transform: scale(1.2);
     transition-duration: 0.5s;
     z-index: 2;
+    width: 150%;
 }
 
 .first-gallery {
-    background-image: url(../assets/gallery1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery1.jpg);
     grid-column: 1 / span 1;
     background-size: cover;
     background-position: center;
 }
 
+.first-gallery:hover {
+    background-image: url(../assets/gallery1.jpg);
+}
+
 .second-gallery {
-    background-image: url(../assets/gallery2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery2.jpg);
     grid-column: 2 / span 1;
     background-size: cover;
     background-position: center;
 }
+.second-gallery:hover {
+    background-image: url(../assets/gallery2.jpg);
+}
 
 .third-gallery {
-    background-image: url(../assets/gallery3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery3.jpg);
     grid-column: 3 / span 1;
     background-size: cover;
     background-position: center;
 }
 
+.third-gallery:hover {
+    background-image: url(../assets/gallery3.jpg);
+}
+
 .fourth-gallery {
-    background-image: url(../assets/gallery4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery4.jpg);
     grid-column: 4 / span 1;
     background-size: cover;
     background-position: center;
 }
 
+.fourth-gallery:hover {
+    background-image: url(../assets/gallery4.jpg);
+}
+
 .fifth-gallery {
-    background-image: url(../assets/gallery5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery5.jpg);
     grid-column: 5 / span 1;
     background-size: cover;
     background-position: center;
+}
+
+.fifth-gallery:hover {
+    background-image: url(../assets/gallery5.jpg);
 }
 
 /* 
@@ -276,6 +290,7 @@ table {
     grid-template-rows: 70% 30%;
     grid-template-columns: repeat(3, 1fr);
     height: 90vh;
+    min-height: 500px;
     color: black;
     background-color: white;
 }
@@ -289,7 +304,7 @@ table {
 }
 
 textarea {
-    height: 7em;
+    height: 20%;
     width: 30em;
     color: #d0d0d0;
     padding: 10px;
@@ -301,29 +316,30 @@ textarea {
 legend {
     font-size: 1.3em;
     border: 2px solid rgba(87, 87, 87, 0.51);
-    padding: 0.2em;
+    padding: 0.6vh;
     border-radius: 0.5em;
     box-shadow: 2px 2px 4px #dbdbdb;
+    line-height: 100%;
 }
 
 form {
     grid-area: 1/2/1/3;
-    line-height: 125%;
+    line-height: 4vh;
+    height: 65vh;
+    min-height: 370px;
     grid-column: 2 / span 1;
 }
 
 fieldset {
-    width: 100%;
-    padding: 1em 2em;
+    padding: 3vh 4vh;
 }
 
 #choice-list {
-    margin-bottom: 1em;
+    margin-bottom: 1vh;
 }
 
 #newsletter-button {
-    margin-top: 2em;
-    margin-bottom: 1.5em;
+    margin: 3vh 0;
 }
 
 #submit-button {
@@ -332,25 +348,23 @@ fieldset {
     transition-duration: 0.3s;
     background-color: #548ac1;
     border: 1px solid #376089;
-    border-radius: 0.5em;
+    border-radius: 1vh;
     color: white;
-    cursor: pointer;
     font-size: 1em;
-    height: 2em;
     width: 8em;
     font-weight: 200;
     letter-spacing: 2px;
     transform: scale(0.95);
+    cursor: pointer;
 }
 
 #submit-button:hover {
-/*    transform: scale(1);*/
+    transform: scale(1);
     letter-spacing: 3px;
     transition-duration: 0.2s;
     background-color: #368ce3; 
     box-shadow: 2px 2px 4px #cbcbcb;
 }
-
 
 /*
 * FOOTER
