@@ -320,7 +320,7 @@ form {
     grid-area: 1/2/1/2;
     line-height: 4vh;
     height: 65vh;
-    min-height: 370px;
+    min-height: 300px;
     grid-column: 2 / span 1;
     width: 100%;
 }
@@ -362,6 +362,8 @@ margin-left: 40%;
     letter-spacing: 2px;
     transform: scale(0.95);
     cursor: pointer;
+    height: 4vh;
+    min-height: 25px;
 }
 
 #submit-button:hover {
