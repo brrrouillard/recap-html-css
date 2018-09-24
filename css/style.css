@@ -312,7 +312,7 @@ legend {
     border: 2px solid rgba(87, 87, 87, 0.51);
     padding: 0.6vh;
     border-radius: 0.5em;
-    box-shadow: 2px 2px 4px #dbdbdb;
+    box-shadow: 2px 2px 4px rgba(123, 123, 123, 0.35);
     line-height: 100%;
 }
 
