@@ -44,13 +44,13 @@ a {
     position: fixed;
     width: 100%;
     z-index: 10;
+    line-height: 8vh;
 }
 
 .menu-links {
     display: flex;
     list-style: none;
     float: right;
-    line-height: 8vh;
     font-size: 1.2em
 }
 
@@ -58,7 +58,6 @@ a {
     float: left;
     padding-left: 1em;
     color: white;
-    line-height: 8vh;
     font-family: 'Amatic SC';
     font-size: 5.5vh;
 }
@@ -120,7 +119,6 @@ a {
     justify-content: center;
     border-radius: 0.2em;
     width: 95%;
-    
     box-shadow: 0.3vh 0.4vh 0.3vh rgba(0, 0, 0, 0.1);
 }
 
@@ -155,11 +153,13 @@ td.price {
 .menu-alcools {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    line-height: 115%;
 }
 
 .menu-snacks {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+    line-height: 129%;
 }
 
 .grille-menu {
@@ -188,6 +188,8 @@ td.price {
 .gallery {
     width: 100%;
     transition-duration: 0.5s;
+    background-size: cover;
+    background-position: center;
 }
 
 .gallery:hover {
@@ -200,8 +202,6 @@ td.price {
 .first-gallery {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery1.jpg);
     grid-column: 1 / span 1;
-    background-size: cover;
-    background-position: center;
 }
 
 .first-gallery:hover {
@@ -211,9 +211,8 @@ td.price {
 .second-gallery {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery2.jpg);
     grid-column: 2 / span 1;
-    background-size: cover;
-    background-position: center;
 }
+
 .second-gallery:hover {
     background-image: url(../assets/gallery2.jpg);
 }
@@ -221,8 +220,6 @@ td.price {
 .third-gallery {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery3.jpg);
     grid-column: 3 / span 1;
-    background-size: cover;
-    background-position: center;
 }
 
 .third-gallery:hover {
@@ -232,8 +229,6 @@ td.price {
 .fourth-gallery {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery4.jpg);
     grid-column: 4 / span 1;
-    background-size: cover;
-    background-position: center;
 }
 
 .fourth-gallery:hover {
@@ -243,8 +238,6 @@ td.price {
 .fifth-gallery {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/gallery5.jpg);
     grid-column: 5 / span 1;
-    background-size: cover;
-    background-position: center;
 }
 
 .fifth-gallery:hover {
@@ -268,7 +261,7 @@ td.price {
     padding: 1em;
     border: 2px solid rgba(0, 0, 0, 0.1);
     background-color: white;
-    height: 100%; 
+    height: 100%;
     width: 90vh;
     grid-column: 2/span 1;
     width: 100%
@@ -349,8 +342,7 @@ textarea {
 }
 
 #submit-button {
-
-margin-left: 40%;
+    margin-left: 40%;
     transition-duration: 0.3s;
     background-color: #548ac1;
     border: 1px solid #376089;
@@ -370,7 +362,7 @@ margin-left: 40%;
     transform: scale(1);
     letter-spacing: 3px;
     transition-duration: 0.2s;
-    background-color: #368ce3; 
+    background-color: #368ce3;
     box-shadow: 2px 2px 4px #cbcbcb;
 }
 
@@ -379,7 +371,7 @@ margin-left: 40%;
 */
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 10%;
     color: rgb(238, 237, 237);
     text-align: center;
@@ -391,7 +383,7 @@ margin-left: 40%;
     display: flex;
     list-style: none;
     font-size: 150%;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .footer p {
