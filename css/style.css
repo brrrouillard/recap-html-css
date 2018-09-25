@@ -141,18 +141,18 @@ a {
     font-weight: 300;
     margin: 0.6vh;
     font-size: 1.1em;
-    border-bottom: 1px solid #ffffff;
-    color: #bfbfbf;
+    border-bottom: 2px solid #ffffff;
+    color: #a0a0a0;
 }
 
 .box td {
     font-weight: 100;
     font-size: 0.7em;
+    width: 100%;
 }
 
-td.price {
+.price {
     text-align: right;
-    width: 6%;
 }
 
 .menu-bieres {
@@ -560,14 +560,14 @@ textarea {
 @media only screen and (min-width : 501px) and (max-width : 860px) {
     .page-location {
         display: block;
-        height: 100vh;
+        height: auto;
+        padding-bottom: 1vh;
         background-color: #f7f7f7;
+        
     }
 
     .map-img {
-        margin: 2em auto;
-        padding: 1em;
-        height: 50%;
+        margin: 1em auto;
         width: 90vw;
     }
 
