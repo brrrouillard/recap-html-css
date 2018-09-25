@@ -23,3 +23,5 @@ I built this webpage with [Lily](https://github.com/LilyDa08) during my internsh
 
 * **Matthieu Brouillard** - [brrrouillard](https://twitter.com/brrrouillard)
 * **Lily Danhaive** - [LilyDa08](https://github.com/LilyDa08)
+
+![Flip bar](assets/screenshot.png)
