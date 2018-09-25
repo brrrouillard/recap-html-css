@@ -15,7 +15,6 @@ body {
     letter-spacing: 1px;
     font-weight: 100;
     font-size: 100%;
-    letter-spacing: 1px;
 }
 
 .page {
@@ -35,7 +34,16 @@ a {
     height: 100%;
     background-image: url(../assets/jumbotron.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
+}
+
+.fas {
+    position: fixed;
+    bottom: 7vh;
+    right: 3vw;
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 3em;
+    z-index: 5;
 }
 
 .navbar {
@@ -51,7 +59,7 @@ a {
     display: flex;
     list-style: none;
     float: right;
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 .logo {
@@ -60,6 +68,12 @@ a {
     color: white;
     font-family: 'Amatic SC';
     font-size: 5.5vh;
+}
+
+.logo:hover,
+.logo:active {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+    font-weight: 900;
 }
 
 .logo h1 {
@@ -80,6 +94,7 @@ a {
 .content {
     display: grid;
     grid-template-rows: repeat(8, 1fr);
+    width: 100%;
     height: 100vh;
     color: white;
     padding-left: 2em;
@@ -250,21 +265,58 @@ td.price {
 
 .page-location {
     display: grid;
-    grid-template-rows: 80% 20%;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 50% 50%;
     height: 75vh;
     background-color: #f7f7f7;
 }
 
+.horaire-div {
+    height: auto;
+    grid-row: 1 / span 1;
+}
+
+.horaire {
+    margin: 0vh auto;
+    background-color: white;
+    width: 70%;
+    line-height: 180%;
+    font-size: 1.2em;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    border-collapse: collapse;
+}
+
+.horaire td {
+    padding: 0.3em;
+    text-align: center;
+}
+
+.jour {
+    width: 50%;
+
+}
+
+.horaire td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#titre-horaire {
+    font-weight: bolder;
+    font-size: 2em;
+    border: none;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 0.5em;
+}
+
 .map-img {
-    grid-area: 1/2/1/3;
+    grid-area: 1/2/1/2;
     padding: 1em;
     border: 2px solid rgba(0, 0, 0, 0.1);
     background-color: white;
     height: 100%;
-    width: 90vh;
+    width: 45vw;
     grid-column: 2/span 1;
-    width: 100%
 }
 
 .map-img iframe {
@@ -403,4 +455,145 @@ textarea {
 
 .fa-instagram:hover {
     color: #fbad50;
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+    .page {
+        padding-top: 1%;
+    }
+
+
+    .menu-links {
+        display: block;
+        text-align: right;
+        line-height: 140%;
+    }
+
+    .navbar {
+        position: static;
+        padding-top: 2vh;
+        height: 17vh;
+    }
+
+    .content {
+        padding-left: 1em;
+        font-size: 130%;
+        height: 83vh
+    }
+
+    .content h2 {
+
+        font-size: 1.3em;
+
+    }
+
+    .page-menu {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        color: black;
+        font-size: 1.6em;
+        grid-gap: 0.5vh 0.5vw;
+        margin: 0.3em;
+    }
+
+    .box {
+        padding: 0.1em;
+        width: 100%;
+    }
+
+    .gallery:hover {
+        transform: scale(1.2);
+        transition-duration: 0.5s;
+        z-index: 2;
+        width: 210%;
+    }
+
+    .page-location {
+        display: block;
+        height: 100vh;
+        background-color: #ffffff;
+    }
+
+
+    .horaire {
+        margin: auto;
+        padding-top: 0;
+        width: 90%;
+        height: 30vh;
+    }
+
+    .map-img {
+        padding: 1em;
+        height: 50%;
+        width: 100vw;
+    }
+
+    .horaire-div {
+        height: auto;
+    }
+
+    .contact-img {
+        display: none;
+    }
+
+    .page-contact {
+        display: block;
+        height: 90vh;
+        min-height: 500px;
+        color: black;
+        background-color: white;
+    }
+
+    form {
+
+        line-height: 4vh;
+        height: 65vh;
+        min-height: 300px;
+        margin-left: auto;
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (min-width : 481px) and (max-width : 860px) {
+    .page-location {
+        display: block;
+        height: 100vh;
+        background-color: #f7f7f7;
+    }
+
+    .map-img {
+        margin: 2em auto;
+        padding: 1em;
+        height: 50%;
+        width: 90vw;
+    }
+
+    .contact-img {
+        display: none;
+    }
+
+    .page-contact {
+        display: block;
+        height: 90vh;
+        min-height: 500px;
+        color: black;
+        background-color: white;
+    }
+
+    form {
+
+        line-height: 4vh;
+        height: 65vh;
+        min-height: 300px;
+        margin-left: auto;
+        width: 90%;
+    }
+
+
 }
