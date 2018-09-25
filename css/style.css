@@ -18,16 +18,17 @@ body {
 }
 
 .page {
-    padding-top: 7%;
+    padding-top: 9vh;
+    overflow: hidden;
 }
 
 /*
-* FIRST PAGE
+* FIRST PAGE -------------------------------------------------
 */
 
 a {
     text-decoration: none;
-    color: white
+    color: white;
 }
 
 .container {
@@ -37,11 +38,15 @@ a {
     background-position: right;
 }
 
+a .fas {
+    display: none;
+}
+
 .fas {
     position: fixed;
-    bottom: 7vh;
-    right: 3vw;
-    color: rgba(0, 0, 0, 0.53);
+    bottom: 3vh;
+    right: 4vw;
+    color: rgba(16, 28, 52, 0.4);
     font-size: 3em;
     z-index: 5;
 }
@@ -65,7 +70,6 @@ a {
 .logo {
     float: left;
     padding-left: 1em;
-    color: white;
     font-family: 'Amatic SC';
     font-size: 5.5vh;
 }
@@ -78,6 +82,11 @@ a {
 
 .logo h1 {
     font-weight: bold;
+    color: aqua;
+}
+
+.logo a {
+    color: #ededed;
 }
 
 .menu-links a,
@@ -113,7 +122,7 @@ a {
 }
 
 /*
-* CARTE
+* CARTE -----------------------------------------------------
 */
 
 .page-menu {
@@ -121,7 +130,7 @@ a {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    color: black;
+    color: #848484;
     font-size: 1.6em;
     grid-gap: 2vh 0.2vw;
     margin: 1em;
@@ -132,9 +141,9 @@ a {
     padding: 0.5em;
     background-color: rgb(248, 248, 248);
     justify-content: center;
-    border-radius: 0.2em;
+    border-radius: 0.1em;
     width: 95%;
-    box-shadow: 0.3vh 0.4vh 0.3vh rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .box h3 {
@@ -187,7 +196,7 @@ a {
 }
 
 /*
-* GALLERY PAGE
+* GALLERY PAGE -----------------------------------------------
 */
 
 .page-photo {
@@ -260,63 +269,62 @@ a {
 }
 
 /* 
-* MAPS AND LOCATION
+* MAPS AND LOCATION ------------------------------------------
 */
 
 .page-location {
     display: grid;
-    grid-template-rows: 70% 30%;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 45% 55%;
     height: 75vh;
     background-color: #f7f7f7;
 }
 
+/*
 .horaire-div {
-    height: auto;
     grid-row: 1 / span 1;
 }
+*/
 
 .horaire {
     margin: 0vh auto;
     background-color: white;
     width: 70%;
-    line-height: 180%;
+    height: 100%;
+    line-height: 170%;
     font-size: 1.2em;
-    border: 2px solid rgba(0, 0, 0, 0.13);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-collapse: collapse;
 }
 
 .horaire td {
     padding: 0.3em;
     text-align: center;
-}
-
-.jour {
-    width: 50%;
-
-}
-
-.horaire td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/*
+.jour {
+    width: 50%;
+}
+*/
+
 #titre-horaire {
-    font-weight: bolder;
-    font-size: 2em;
-    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
     text-align: center;
-    padding-left: 0;
     padding-top: 0.5em;
 }
 
 .map-img {
-    grid-area: 1/2/1/2;
+    /*    grid-area: 1/2/1/2;*/
+    margin-right: 7vw;
     padding: 1em;
     border: 2px solid rgba(0, 0, 0, 0.1);
     background-color: white;
-    height: 100%;
-    width: 45vw;
-    grid-column: 2/span 1;
+    /*    height: 100%;*/
+    /*    width: 45vw;*/
+    /*    grid-column: 2/span 1;*/
 }
 
 .map-img iframe {
@@ -325,12 +333,12 @@ a {
 }
 
 .center {
-    margin: 0 auto;
-    justify-content: center;
+    margin: auto;
+    /*    justify-content: center;*/
 }
 
 /* 
-* CONTACT
+* CONTACT ----------------------------------------------------
 */
 
 .page-contact {
@@ -362,6 +370,7 @@ legend {
 }
 
 form {
+    margin: auto;
     grid-area: 1/2/1/2;
     line-height: 4vh;
     height: 65vh;
@@ -394,7 +403,7 @@ textarea {
 }
 
 #submit-button {
-    margin-left: 40%;
+    margin: 0 36%;
     transition-duration: 0.3s;
     background-color: #548ac1;
     border: 1px solid #376089;
@@ -457,13 +466,15 @@ textarea {
     color: #fbad50;
 }
 
+/*---------------------- RESPONSIVE -----------------------*/
+/* - Smartphones - */
 
-@media only screen and (min-width : 320px) and (max-width : 500px) {
+
+@media only screen and (min-width : 320px) and (max-width : 700px) {
 
     .page {
         padding-top: 1%;
     }
-
 
     .menu-links {
         display: block;
@@ -477,10 +488,14 @@ textarea {
         height: 20vh;
     }
 
+    a .fas {
+        display: block;
+    }
+
     .content {
         padding-left: 1em;
         font-size: 130%;
-        height: 83vh
+        height: 83vh;
     }
 
     .content h2 {
@@ -488,14 +503,9 @@ textarea {
     }
 
     .page-menu {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        height: 100%;
-        color: black;
-        font-size: 1.6em;
         grid-gap: 0.5vh 0.5vw;
         margin: 0.3em;
+        padding-top: 4vh;
     }
 
     .box {
@@ -503,35 +513,40 @@ textarea {
         width: 100%;
     }
 
+    .gallery {
+        margin: auto;
+        height: 70%;
+    }
+
     .gallery:hover {
-        transform: scale(1.2);
-        transition-duration: 0.5s;
-        z-index: 2;
+        transform: scale(1.1);
         width: 210%;
     }
 
     .page-location {
         display: block;
-        height: 100vh;
         background-color: #ffffff;
     }
 
-
     .horaire {
-        margin: auto;
-        padding-top: 0;
-        width: 90%;
-        height: 30vh;
+        margin-top: 2vh;
+        width: 80%;
+        line-height: 160%;
+        border: none;
+        /*      height: 3vh;*/
+    }
+
+    .horaire-div {
+        height: auto;
+        padding-bottom: 2vh;
     }
 
     .map-img {
         padding: 1em;
         height: 50%;
         width: 100vw;
-    }
-
-    .horaire-div {
-        height: auto;
+        border: none;
+        border-top: 2px solid #f0f0f0;
     }
 
     .contact-img {
@@ -539,36 +554,64 @@ textarea {
     }
 
     .page-contact {
-        margin-top: 2vh;
-        padding-top: 5vh;
+        padding-top: 10vh;
         display: block;
-        height: 90vh;
-        min-height: 500px;
-        color: black;
-        background-color: white;
     }
 
     form {
-        line-height: 4vh;
-        height: 65vh;
-        min-height: 300px;
-        margin-left: auto;
         width: 90%;
+    }
+
+    #submit-button {
+        margin: 0 30%;
     }
 }
 
-@media only screen and (min-width : 501px) and (max-width : 860px) {
+
+/* - tablettes - */
+
+
+@media only screen and (min-width : 701px) and (max-width : 860px) {
+
+    .page-menu {
+        margin: 1em 0.4em 0 1em;
+    }
+
+    .gallery {
+        margin: auto;
+        height: 70%;
+    }
+
+    .gallery:hover {
+        transform: scale(1.1);
+        width: 210%;
+    }
+
     .page-location {
         display: block;
         height: auto;
         padding-bottom: 1vh;
-        background-color: #f7f7f7;
-        
     }
 
+    .horaire {
+        background-color: #f7f7f7;
+        line-height: 150%;
+        font-size: 1.1em;
+        width: 50%;
+        margin-bottom: 2%;
+        border: none;
+        /*      height: 3vh;*/
+    }
+
+    /*
+
+    .horaire-div {
+        height: auto;
+    }
+*/
     .map-img {
         margin: 1em auto;
-        width: 90vw;
+        width: 80%;
     }
 
     .contact-img {
@@ -576,20 +619,31 @@ textarea {
     }
 
     .page-contact {
-        margin-top: 2vh;
-        padding-top: 4vh;
+        padding-top: 14vh;
         display: block;
-        height: 90vh;
-        min-height: 500px;
-        color: black;
-        background-color: white;
+
     }
 
     form {
-        line-height: 4vh;
-        height: 65vh;
-        min-height: 300px;
-        margin-left: auto;
-        width: 90%;
+        line-height: 3vh;
+        width: 80%;
     }
+
+    fieldset {
+        padding: 3vh;
+        height: auto;
+    }
+
+    #choice-list {
+        border: 1px solid #d9d9d9;
+    }
+
+    textarea {
+        border: 1px solid #d9d9d9;
+    }
+
+    #submit-button {
+        margin: 0 40%;
+    }
+
 }
