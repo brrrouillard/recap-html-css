@@ -280,12 +280,6 @@ a .fas {
     background-color: #f7f7f7;
 }
 
-/*
-.horaire-div {
-    grid-row: 1 / span 1;
-}
-*/
-
 .horaire {
     margin: 0vh auto;
     background-color: white;
@@ -303,12 +297,6 @@ a .fas {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/*
-.jour {
-    width: 50%;
-}
-*/
-
 #titre-horaire {
     font-weight: bold;
     font-size: 1.5em;
@@ -317,14 +305,10 @@ a .fas {
 }
 
 .map-img {
-    /*    grid-area: 1/2/1/2;*/
     margin-right: 7vw;
     padding: 1em;
     border: 2px solid rgba(0, 0, 0, 0.1);
     background-color: white;
-    /*    height: 100%;*/
-    /*    width: 45vw;*/
-    /*    grid-column: 2/span 1;*/
 }
 
 .map-img iframe {
@@ -334,7 +318,6 @@ a .fas {
 
 .center {
     margin: auto;
-    /*    justify-content: center;*/
 }
 
 /* 
@@ -533,7 +516,6 @@ textarea {
         width: 80%;
         line-height: 160%;
         border: none;
-        /*      height: 3vh;*/
     }
 
     .horaire-div {
@@ -562,14 +544,14 @@ textarea {
         width: 90%;
     }
 
-       #choice-list {
+    #choice-list {
         border: 1px solid #d9d9d9;
     }
 
     textarea {
         border: 1px solid #d9d9d9;
     }
-    
+
     #submit-button {
         margin: 0 30%;
     }
@@ -580,10 +562,10 @@ textarea {
 
 
 @media only screen and (min-width : 701px) and (max-width : 860px) {
-    
+
     .container {
-    background-image: url(../assets/jumbotron_tablet.jpg);
-}
+        background-image: url(../assets/jumbotron_tablet.jpg);
+    }
 
     .page-menu {
         margin: 1em 0.4em 0 1em;
@@ -612,15 +594,8 @@ textarea {
         width: 50%;
         margin-bottom: 2%;
         border: none;
-        /*      height: 3vh;*/
     }
 
-    /*
-
-    .horaire-div {
-        height: auto;
-    }
-*/
     .map-img {
         margin: 1em auto;
         width: 80%;
