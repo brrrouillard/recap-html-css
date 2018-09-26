@@ -580,6 +580,10 @@ textarea {
 
 
 @media only screen and (min-width : 701px) and (max-width : 860px) {
+    
+    .container {
+    background-image: url(../assets/jumbotron_tablet.jpg);
+}
 
     .page-menu {
         margin: 1em 0.4em 0 1em;
